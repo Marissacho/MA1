@@ -5,8 +5,8 @@
 using namespace std:
 
 void testQueueSize(void){
+q.enqueue(5);
 q.enqueue(10);
-q.enqueue(20);
 cout<<"size after enqueuing 2 elements:"<<q.size()<<endl;
 q.dequeue();
 q.dequeue();
@@ -47,9 +47,9 @@ cout<<"Front element after enqueueing:"<<q5.peek()<<endl;
 }
 void testQueuePeek(void){
 queue q6(2);
+q6.enqueue(5);
 q6.enqueue(10);
-q6.enqueue(20);
-q6.enqueue(30);
+q6.enqueue(15);
 
 queue q7;
 q7.enqueue(1);
